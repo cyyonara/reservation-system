@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-roboto;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #0099ff;
+  --shadow-clr: #1e1e1e33;
+}
+
+body {
+  @apply scroll-smooth;
+}
+
+.user-header a.active button {
+  @apply bg-white text-c-blue;
+}
+
+.home-nav a.active div {
+  @apply bg-gray-100;
+}
+
+.u-home-nav .active {
+  @apply bg-white text-c-blue;
+}
+
+nav.u-mobile-nav a.active {
+  @apply bg-white text-c-blue;
+}
+
+nav.admin-sidebar a.active {
+  @apply bg-gray-100;
+}
+
+nav.admin-sidebar a.active > * {
+  @apply h-full;
+}
+
+@media (max-height: 890px) {
+  .wave-svg {
+    display: none;
+  }
+}
+
+.main-admin-nav a.active {
+  @apply bg-white text-c-blue;
+}
